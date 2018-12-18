@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::post('webhook', 'BotController@webhook');
+Route::post('sethook', 'BotController@sethook');
